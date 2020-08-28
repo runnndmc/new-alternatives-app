@@ -34,27 +34,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 290px;
-  max-height: 290px;
-  min-width: 800px;
-  overflow: hidden;
   color: rgb(255, 255, 255);
-  background-color: rgb(148,185,87);
+  background-color: rgb(148, 185, 87);
 }
 
-.who-we-help-h1{ 
+.who-we-help-h1 {
   font-size: 50px;
   font-weight: 800;
-  max-height: 290px;
+  margin: 0;
 }
 
 .who-we-help-p {
   font-size: 20px;
-  height: 290;
-  max-height: 290px;
-  text-align: justify;
-  text-justify: inter-word;
-  margin: 0px 320px 50px 270px;
+  max-width: 60vw;
 }
 
 .get-involved {
@@ -64,21 +58,19 @@
   height: 520px;
   max-height: 520px;
   margin-top: 0px;
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
 }
 
 .get-involved-icons {
   display: flex;
   justify-content: space-evenly;
   height: 160px;
- 
 }
 
 .get-involved-text {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly
-  
+  justify-content: space-evenly;
 }
 
 .get-involved h1 {

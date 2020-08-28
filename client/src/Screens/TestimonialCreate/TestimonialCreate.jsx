@@ -7,7 +7,6 @@ import LeftQuote from "../../Assets/left-quote.png";
 import RightQuote from "../../Assets/right-quote.png";
 
 const TestimonialCreate = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
