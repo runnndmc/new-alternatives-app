@@ -8,6 +8,7 @@
 .photo-carousel {
   position: relative;
   width: 82vw;
+  /* background-color: pink; */
 }
 
 .photo-carousel a {
@@ -30,6 +31,7 @@ a h3 {
 
 .photo-image {
   width: 26vw;
+  min-width: 335px;
 }
 
 .rela {
@@ -77,4 +79,17 @@ a h3 {
 .forward-icon {
   height: 30px;
   width: 17px;
+}
+
+/* ========  MEDIA QUERIES =========== */
+@media only screen and (max-width: 1245px) {
+  .photo-carousel {
+    width: 700px !important;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .photo-carousel {
+    width: 390px !important;
+  }
 }

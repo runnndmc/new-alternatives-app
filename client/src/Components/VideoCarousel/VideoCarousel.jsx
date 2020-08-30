@@ -1,7 +1,13 @@
 import React from "react";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
+import {
+  CarouselProvider,
+  Slider,
+  Slide,
+  ButtonBack,
+  ButtonNext,
+} from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
-import "./VideoCarousel.css"
+import "./VideoCarousel.css";
 import LeftArrow from "../../Assets/left-arrow.png";
 import RightArrow from "../../Assets/right-arrow.png";
 import Purple from "../../Assets/Videos/Purple.mp4";
@@ -11,23 +17,21 @@ import Red from "../../Assets/Videos/Red.mp4";
 import Yellow from "../../Assets/Videos/Yellow.mp4";
 
 const VideoCarousel = () => {
-
-    return(    
-        <div className="video-wrapper">                                             
-            <CarouselProvider
-                className="carousel-complete"
-                naturalSlideWidth={400}
-                naturalSlideHeight={200}
-                totalSlides={5}
-                visibleSlides={3}
-                infinite={true}
-            >
-                <h3 className="video-header">#WhatAboutUs</h3>
-                <ButtonBack className="video-back-btn btn">
-                    <img className="back-arrow" src={LeftArrow} alt="back arrow"/>
-                </ButtonBack>          
-                <Slider className="video-container">
-
+  return (
+    <div className="video-wrapper">
+      <CarouselProvider
+        className="carousel-complete"
+        naturalSlideWidth={400}
+        naturalSlideHeight={200}
+        totalSlides={5}
+        visibleSlides={3}
+        infinite={true}
+      >
+        <h3 className="video-header">#WhatAboutUs</h3>
+        <ButtonBack className="video-back-btn btn">
+          <img className="back-arrow" src={LeftArrow} alt="back arrow" />
+        </ButtonBack>
+        <Slider className="video-container">
           <Slide>
             <div className="c-video">
               <video className="video" width="100%" height="100%" controls>

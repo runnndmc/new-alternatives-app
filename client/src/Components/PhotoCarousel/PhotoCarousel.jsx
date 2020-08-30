@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   CarouselProvider,
   Slider,
@@ -26,6 +26,19 @@ function PhotoCarousel() {
   const [isVisible5, updateIsVisible5] = useState(false);
   const [isVisible6, updateIsVisible6] = useState(false);
   const [isVisible7, updateIsVisible7] = useState(false);
+  const [numOfSlides, updateNumOfSlides] = useState(3);
+
+  useEffect(() => {
+    function handleResize() {
+      updateNumOfSlides(Math.floor(window.innerWidth / 415));
+      console.log(`window: ${window.innerWidth}`);
+      console.log("test");
+      console.log(`number of slides: ${numOfSlides}`);
+
+      window.addEventListener("resize", handleResize);
+    }
+    handleResize();
+  });
 
   return (
     <div className="complete-photo-carousel-component">
@@ -33,7 +46,7 @@ function PhotoCarousel() {
         <CarouselProvider
           className="photo-carousel"
           totalSlides={7}
-          visibleSlides={3}
+          visibleSlides={numOfSlides}
           isIntrinsicHeight={true}
           infinite={true}
         >
@@ -101,7 +114,6 @@ function PhotoCarousel() {
                 <img className="photo-image" src={GirlClothing} />
                 {isVisible3 && (
                   <div className="absol">
-
                     <a
                       href="https://www.instagram.com/p/CCoWebODbnv/?utm_source=ig_web_copy_link"
                       target="blank"
@@ -114,7 +126,6 @@ function PhotoCarousel() {
                         #donations #lgbtq🌈
                       </p>
                     </a>
-
                   </div>
                 )}
               </div>
