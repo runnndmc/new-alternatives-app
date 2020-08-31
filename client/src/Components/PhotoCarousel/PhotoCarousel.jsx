@@ -31,9 +31,6 @@ function PhotoCarousel() {
   useEffect(() => {
     function handleResize() {
       updateNumOfSlides(Math.floor(window.innerWidth / 415));
-      console.log(`window: ${window.innerWidth}`);
-      console.log("test");
-      console.log(`number of slides: ${numOfSlides}`);
 
       window.addEventListener("resize", handleResize);
     }

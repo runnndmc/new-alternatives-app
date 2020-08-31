@@ -8,7 +8,6 @@
 .photo-carousel {
   position: relative;
   width: 82vw;
-  /* background-color: pink; */
 }
 
 .photo-carousel a {
@@ -85,6 +84,15 @@ a h3 {
 @media only screen and (max-width: 1245px) {
   .photo-carousel {
     width: 700px !important;
+  }
+
+  a h3 {
+    font-size: 21px;
+  }
+
+  .photo-desc {
+    margin: 0 15px;
+    font-size: 15px;
   }
 }
 
