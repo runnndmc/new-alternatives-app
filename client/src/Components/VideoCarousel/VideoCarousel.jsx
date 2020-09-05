@@ -33,7 +33,7 @@ const VideoCarousel = () => {
       <CarouselProvider
         className="carousel-complete"
         naturalSlideWidth={400}
-        naturalSlideHeight={200}
+        naturalSlideHeight={250}
         totalSlides={5}
         visibleSlides={numOfSlides}
         infinite={true}
